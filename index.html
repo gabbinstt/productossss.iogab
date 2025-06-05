@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Mundo Gabx</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.2.2/dist/cdn.min.js" defer></script>
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/confetti.png');
+      background-color: #fff0f5;
+    }
+  </style>
+</head>
+
+<body class="text-gray-900">
+  <header class="bg-pink-300 text-white p-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">El Mundo Gabx</h1>
+      <nav class="space-x-4">
+        <a href="#inicio" class="hover:underline">Inicio</a>
+        <a href="#servicios" class="hover:underline">Productos</a>
+        <a href="#nosotros" class="hover:underline">Nosotros</a>
+        <a href="#contacto" class="hover:underline">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="py-20 text-center">
+      <div class="container mx-auto">
+        <h2 class="text-5xl font-bold mb-4 text-pink-600">Bienvenido a El Mundo Gabx</h2>
+        <p class="text-lg">Una línea dulce y creativa de productos de belleza para emprendedores.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/3531/3531409.png" class="w-20 mx-auto mt-4" alt="Dulce">
+      </div>
+    </section>
+
+    <section id="servicios" class="py-20 bg-pink-100">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Nuestros Productos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Producto 1 -->
+          <div class="bg-white p-6 shadow-lg rounded" x-data="{ open: false }">
+            <h3 class="text-xl font-semibold mb-2">Lentes de sol</h3>
+            <p>Estos lentes de sol son increibles para cualquier look.</p>
+            <div class="grid grid-cols-2 gap-2 mt-4">
+              <template x-if="open">
+                <div class="col-span-2">
+                  <img src="Imagenesss/compralo yaaaaa.img" class="rounded mx-auto mb-2">
+                  <p class="text-sm">Compralos ya!!</p>
+                </div>
+              </template>
+              <img src="Imagenesss/IMG_5607.jpeg" alt="Gloss" class="rounded">
+              <img src="Imagenesss/IMG_5608.jpeg" alt="Gloss" class="rounded">
+
+              <center>
+               <!-- Precio decorado -->
+  <div class="inline-block bg-pink-100 border border-pink-300 text-pink-700 text-lg font-semibold px-4 py-2 rounded-xl shadow-sm mb-4">
+    RD$450
+  </div>
+</center>  
+            </div>
+            <button @click="open = !open" class="mt-4 px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-500">Ver más</button>
+            <a href="https://www.paypal.com" target="_blank" class="block mt-2 text-sm text-pink-600 hover:underline">Pagar con tarjeta</a>
+          </div>
+
+          
+
+          <!-- Producto 2 -->
+          <div class="bg-white p-6 shadow-lg rounded" x-data="{ open: false }">
+            <h3 class="text-xl font-semibold mb-2">Mango/ Coriande</h3>
+            <p>JLait corps évasion.</p>
+            <div class="grid grid-cols-2 gap-2 mt-4">
+              <template x-if="open">
+                <div class="col-span-2">
+                  <img src="Imagenesss/compralo yaaaaa.img" class="rounded mx-auto mb-2">
+                  <p class="text-sm">Aroma delicioso para tu piel.</p>
+                </div>
+              </template>
+              <img src="Imagenesss/IMG_5582.jpeg" alt="Jabón" class="rounded">
+              <img src="Imagenesss/IMG_5583.jpeg" alt="Jabón" class="rounded">
+              
+              <center>
+                <!-- Precio decorado -->
+   <div class="inline-block bg-pink-100 border border-pink-300 text-pink-700 text-lg font-semibold px-4 py-2 rounded-xl shadow-sm mb-4">
+     RD$2,500
+   </div>
+ </center>  
+
+            </div>
+            <button @click="open = !open" class="mt-4 px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-500">Ver más</button>
+            <a href="https://www.paypal.com" target="_blank" class="block mt-2 text-sm text-pink-600 hover:underline">Pagar con tarjeta</a>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="bg-white p-6 shadow-lg rounded" x-data="{ open: false }">
+            <h3 class="text-xl font-semibold mb-2">Gotero de Óliva</h3>
+            <p>Hidrata y aporta nutrientes a tu cabello.</p>
+            <div class="grid grid-cols-2 gap-2 mt-4">
+              <template x-if="open">
+                <div class="col-span-2">
+                  <img src="Imagenesss/compralo yaaaaa.img" class="rounded mx-auto mb-2">
+                  <p class="text-sm">Ideal para piel suave y renovada.</p>
+                </div>
+              </template>
+              <img src="Imagenesss/IMG_5594.jpeg" alt="Scrub" class="rounded">
+              <img src="Imagenesss/IMG_5595.jpeg" alt="Scrub" class="rounded">
+              
+              <center>
+                <!-- Precio decorado -->
+   <div class="inline-block bg-pink-100 border border-pink-300 text-pink-700 text-lg font-semibold px-4 py-2 rounded-xl shadow-sm mb-4">
+     RD$950
+   </div>
+ </center>  
+
+            </div>
+            <button @click="open = !open" class="mt-4 px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-500">Ver más</button>
+            <a href="https://www.paypal.com" target="_blank" class="block mt-2 text-sm text-pink-600 hover:underline">Pagar con tarjeta</a>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="bg-white p-6 shadow-lg rounded" x-data="{ open: false }">
+            <h3 class="text-xl font-semibold mb-2">Kit Belleza Mini</h3>
+            <p>Mini kit con gloss, espejo y jabón miniatura.</p>
+            <div class="grid grid-cols-2 gap-2 mt-4">
+              <template x-if="open">
+                <div class="col-span-2">
+                  <img src="Imagenesss/compralo yaaaaa.img" class="rounded mx-auto mb-2">
+                  <p class="text-sm">Regalo ideal y compacto.</p>
+                </div>
+              </template>
+              <img src="Imagenesss/IMG_5587.jpeg" alt="Kit" class="rounded">
+              <img src="Imagenesss/IMG_5588.jpeg" alt="Kit" class="rounded">
+            
+              <center>
+                <!-- Precio decorado -->
+   <div class="inline-block bg-pink-100 border border-pink-300 text-pink-700 text-lg font-semibold px-4 py-2 rounded-xl shadow-sm mb-4">
+     RD$765
+   </div>
+ </center>  
+
+            </div>
+            <button @click="open = !open" class="mt-4 px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-500">Ver más</button>
+            <a href="https://www.paypal.com" target="_blank" class="block mt-2 text-sm text-pink-600 hover:underline">Pagar con tarjeta</a>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="bg-white p-6 shadow-lg rounded" x-data="{ open: false }">
+            <h3 class="text-xl font-semibold mb-2">Bálsamos Cupcake</h3>
+            <p>Bálsamos labiales en envases con forma de cupcakes.</p>
+            <div class="grid grid-cols-2 gap-2 mt-4">
+              <template x-if="open">
+                <div class="col-span-2">
+                  <img src="Imagenesss/compralo yaaaaa.img" class="rounded mx-auto mb-2">
+                  <p class="text-sm">Hidratación y ternura para tus labios.</p>
+                </div>
+              </template>
+              <img src="Imagenesss/IMG_5598.jpeg" alt="Bálsamo" class="rounded">
+              <img src="Imagenesss/IMG_5599.jpeg" alt="Bálsamo" class="rounded">
+              
+              <center>
+                <!-- Precio decorado -->
+   <div class="inline-block bg-pink-100 border border-pink-300 text-pink-700 text-lg font-semibold px-4 py-2 rounded-xl shadow-sm mb-4">
+     RD$1,000
+   </div>
+ </center>  
+
+            </div>
+            <button @click="open = !open" class="mt-4 px-4 py-2 bg-pink-400 text-white rounded hover:bg-pink-500">Ver más</button>
+            <a href="https://www.paypal.com" target="_blank" class="block mt-2 text-sm text-pink-600 hover:underline">Pagar con tarjeta</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+   
+      
+      <section id="nosotros" class="py-20 bg-pink-50">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
+          <!-- Foto de la creadora -->
+          <div class="flex-shrink-0">
+            <img src="Imagenesss/IMG_5690.jpeg" alt="Tu foto" class="rounded-full border-4 border-pink-300 shadow-lg w-64 h-64 object-cover" />
+          </div>
+      
+          <!-- Biografía -->
+          <div>
+            <h2 class="text-4xl font-bold text-pink-600 mb-4">Hola, soy Gabriela ✨</h2>
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+              Soy la fundadora de <strong>El Mundo Gabx</strong>, un emprendimiento creado con mucho amor, pasión y creatividad. Mi objetivo es ofrecerte productos de belleza que no solo te hagan lucir bien, sino también sentirte única y feliz. 🎀
+            </p>
+            <p class="text-gray-600 text-base italic">
+              “La belleza comienza desde adentro, pero un poco de gloss nunca está de más.” 💄
+            </p>
+          </div>
+        </div>
+      </section>
+      
+
+
+    <section id="contacto" class="py-20 bg-pink-100">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-6 text-pink-600">Contáctanos</h2>
+          <form class="max-w-lg mx-auto text-left space-y-4">
+            <input type="text" placeholder="Nombre" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400">
+            <input type="email" placeholder="Correo electrónico" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400">
+            <textarea placeholder="Mensaje" rows="5" required class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-400"></textarea>
+            <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded shadow">Enviar mensaje</button>
+          </form>
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold mb-2">Síguenos en redes sociales</h3>     
+            <div class="flex justify-center space-x-4">
+              <a href="https://twitter.com" target="_blank" class="text-pink-600 hover:text-pink-800 text-2xl">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M24 4.6c-.9.4-1.8.7-2.8.8 1-0.6 1.8-1.6 2.2-2.7-.9.6-2 .9-3.1 1.1a5 5 0 0 0-8.5 4.6C7.7 8.4 4.1 6.6 1.7 3.8c-.5.9-.8 1.9-.8 3a5 5 0 0 0 2.2 4.2c-.8 0-1.5-.2-2.1-.6v.1c0 2.4 1.7 4.4 4 4.8-.4.1-.8.1-1.2.1-.3 0-.6 0-.9-.1.6 1.9 2.4 3.3 4.5 3.4A10 10 0 0 1 0 19.5a14 14 0 0 0 7.5 2.2c9 0 13.9-7.5 13.9-13.9v-.6c1-.7 1.8-1.6 2.6-2.6z"/></svg>
+              </a>
+              <a href="https://facebook.com" target="_blank" class="text-pink-600 hover:text-pink-800 text-2xl">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M22.7 0H1.3A1.3 1.3 0 0 0 0 1.3v21.5A1.3 1.3 0 0 0 1.3 24H12v-9.3H9.3v-3.6H12V8.4c0-2.7 1.6-4.2 4-4.2 1.2 0 2.4.2 2.4.2v2.7H16c-1.3 0-1.7.8-1.7 1.7v2h3l-.5 3.6h-2.5V24h4.9A1.3 1.3 0 0 0 24 22.7V1.3A1.3 1.3 0 0 0 22.7 0z"/></svg>
+              </a>
+              <a href="https://instagram.com" target="_blank" class="text-pink-600 hover:text-pink-800 text-2xl">
+                <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24"><path d="M12 2.2a9.8 9.8 0 1 0 0 19.6 9.8 9.8 0 0 0 0-19.6zm0 18A8.2 8.2 0 1 1 12 3.8a8.2 8.2 0 0 1 0 16.4zm4.3-12.3c-.5 0-.9.1-1.2.4-.3.2-.5.6-.6 1.1-.1.5-.1 1-.1 1.7s0 1.2.1 1.7c.1.5.3.9.6 1.1.3.2.7.4 1.2.4s.9-.1 1.2-.4c.3-.2.5-.6.6-1.1.1-.5.1-1 .1-1.7s0-1.2-.1-1.7c-.1-.5-.3-.9-.6-1.1-.3-.2-.7-.4-1.2-.4zM12 7.5c-.7 0-1.4.1-2.1.4-.6.2-1.1.6-1.5 1-.4.4-.7.9-.9 1.5-.2.6-.3 1.3-.3 2s.1 1.4.3 2c.2.6.5 1.1.9 1.5.4.4.9.8 1.5 1 .7.3 1.4.4 2.1.4s1.4-.1 2.1-.4c.6-.2 1.1-.6 1.5-1 .4-.4.7-.9.9-1.5.2-.6.3-1.3.3-2s-.1-1.4-.3-2c-.2-.6-.5-1.1-.9-1.5-.4-.4-.9-.8-1.5-1-.7-.3-1.4-.4-2.1-.4z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+    
+  
+    <footer class="bg-pink-600 text-white text-center p-4">
+      <p>&copy; 2025 El Mundo Gabx. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+  
+  </html>
+  
